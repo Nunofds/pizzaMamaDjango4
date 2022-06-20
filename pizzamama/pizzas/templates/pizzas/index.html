@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}   <!-- permet de charger les fichiers dans le dossier static -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <title>Menu des pizzas</title>
+
+    <!-- my CSS link -->
+    <link rel="stylesheet" href="{% static 'pizzas/style.css' %}">
+</head>
+<body>
+    <nav id="small-logo">
+        <a href="{% url 'main:index' %}">
+            <img src="{% static 'pizzas/images/small_logo.png' %}" alt="logo restaurant">
+        </a>
+    </nav>
+    <div class="fil-ariane">
+        <a href="{% url 'main:index' %}">Accueil</a>
+        -
+        <a href="{% url 'menu:index' %}">Menu</a>
+        -
+        <a href="{% url 'pizzas:index' %}">Pizzas</a>
+
+    </div>
+
+    <h1>Les pizzas</h1>
+
+    <div class="liste-pizzas">
+        {% for pizza in pizzas %}
+        <div>
+            <span class="menu-nom-pizza">{{ pizza.nom }}</span>
+            <span class="menu-prix-pizza">{{ pizza.prix | floatformat:2 }}€</span>
+            <p>{{ pizza.ingredients }}</p>
+            <span class="bio">BIO</span>
+            {% if pizza.vegetarienne %}
+            <span class="vegetarienne">Végétarienne</span>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

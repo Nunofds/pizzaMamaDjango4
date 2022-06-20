@@ -1,0 +1,37 @@
+:root {
+    --color1: #dd7835;
+    --color2: #fff;
+}
+
+body {
+    background: url("images/main_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.main-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-voir-menu {
+    display: block;
+    width: 200px;
+    text-align: center;
+    color: var(--color1);
+    padding: 10px 0;
+    border: 1px solid var(--color1);
+    font-size: 18px;
+    margin: 30px auto;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn-voir-menu:hover {
+    border: 1px solid var(--color2);
+}

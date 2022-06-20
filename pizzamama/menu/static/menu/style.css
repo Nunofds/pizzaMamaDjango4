@@ -1,0 +1,76 @@
+body {
+    background: url("images/main_background.jpg") no-repeat   center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+#small-logo {
+    margin: 25px 35px;
+}
+
+.fil-ariane a{
+    color: #ddd;
+    font-size: 12px;
+    font-style: italic;
+}
+
+h1 {
+    font: italic small-caps bold 36px/2 cursive;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-content .pizza-content a{
+    background: url("images/img_pizza_menu.jpg") no-repeat    center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+}
+
+.menu-content .pattes-content a{
+    background: url("images/img_pattes_menu.jpg") no-repeat    center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+     height: 600px;
+}
+.menu-content .pizza-content,
+.menu-content .pattes-content {
+     width: 400px;
+     overflow: hidden;
+}
+.menu-content .pizza-content a,
+.menu-content .pattes-content a {
+    display: block;
+    text-align: center;
+    top: 50%;
+    height: 100%;
+    line-height: 600px;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.menu-content .pizza-content a span,
+.menu-content .pattes-content a span {
+    background: #00000050;
+    padding: 6px;
+}
+
+.menu-content .pizza-content a:hover,
+.menu-content .pattes-content a:hover {
+    transform: scale(1.2);
+}

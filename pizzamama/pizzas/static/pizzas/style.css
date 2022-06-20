@@ -1,0 +1,94 @@
+:root {
+    --color1: #dd7835;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("images/menu_background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+#small-logo {
+    margin: 25px 35px;
+}
+
+h1 {
+    display: inline-block;
+    background: var(--color1);
+    padding: 16px 25px;
+    margin: 25px 0;
+}
+
+.liste-pizzas {
+    padding-left: 60px;
+}
+
+.liste-pizzas div {
+    margin: 30px 0;
+}
+
+.liste-pizzas .menu-nom-pizza {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+}
+.liste-pizzas .menu-prix-pizza {
+    display: inline-block;
+    font-size: 20px;
+    color: var(--color1);
+    width: 80px;
+    text-align: right;
+}
+
+.liste-pizzas div p {
+    color: #c8c8c8;
+    margin: 8px 0;
+    width: 300px;
+    overflow: auto;
+}
+
+.vegetarienne {
+    font-size: 9px;
+    background: var(--color1);
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.bio {
+    font-size: 9px;
+    background: #00800090;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.fil-ariane a {
+    color: #ddd;
+    font-size: 12px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .liste-pizzas {
+        padding-left: 25px;
+    }
+    .liste-pizzas .menu-nom-pizza {
+        width: 150px;
+    }
+}
