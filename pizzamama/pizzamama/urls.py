@@ -21,5 +21,6 @@ urlpatterns = [
     path('pizzas/', include('pizzas.urls')),
     path('pattes/', include('pattes.urls')),
     path('menu/', include('menu.urls')),
+    path('api/', include('pizzas.api_urls')),
     path('', include('main.urls')),
 ]
